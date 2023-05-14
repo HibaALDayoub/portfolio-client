@@ -1,0 +1,22 @@
+.app{
+    height: 100vh;
+}
+.app .sections{
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 500px) {
+    .app{
+        width: 375px;
+    }
+}
+
+
+
+

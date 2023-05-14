@@ -1,0 +1,9 @@
+@import '../../../global.css';
+ p{
+    color: var(--lightGray);
+    padding: 8px 0;
+}
+ h4{
+    color: var(--lightWhite);
+    font-family: 'Lato';
+}

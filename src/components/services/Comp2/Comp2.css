@@ -1,0 +1,17 @@
+@import '../../../global.css';
+
+.hWithp {
+    width: 90%;
+}
+.hWithp h2{
+    padding-bottom: 3%;
+    color: var(--lightGreen);
+}
+.hWithp .p{
+    width: 50%;
+}
+@media (max-width: 768px){
+    .hWithp .p{
+        width: 100%;
+    }
+}

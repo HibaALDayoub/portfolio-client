@@ -1,0 +1,9 @@
+@import '../../../global.css';
+li{
+    display: flex;
+    align-items: center;
+}
+li p{
+    margin-left: 10px;
+    color: var(--lightGray);
+}

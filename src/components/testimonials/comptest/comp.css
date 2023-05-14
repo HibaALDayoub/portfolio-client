@@ -1,0 +1,36 @@
+
+.testimonials .parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 30px;
+    color: white;
+    margin: 5% 0;
+}
+.testimonials .parent p{
+    margin: 3.5% 0;
+}
+.testimonials .parent img{
+    width: 9%;
+}
+.testimonials .parent .namewithimg{
+    display: flex;
+    align-items: center
+}
+.testimonials .parent .namewithimg h3,
+.testimonials .parent .namewithimg p{
+    display: block;
+}
+.testimonials .parent .namewithimg img{
+    width: 12%;
+    padding-right: 20px;
+}
+@media (max-width: 768px){
+.testimonials .parent .namewithimg img {
+    width: 17%;
+}}
+@media (max-width: 500px) {
+    .testimonials .parent{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
+}

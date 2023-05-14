@@ -1,0 +1,26 @@
+@import '../../../global.css';
+.about .right .prog{
+    margin: 15px 0;
+    height: 35px;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.about .right .prog span{
+    background-color: white;
+    color: var(--lightGray);
+    padding: 5px 0 5px 8px;
+}
+.about .right .prog hr{
+    width: 20%;
+    margin-left: 10px;
+    background-color: white;
+    height: 1px;
+    transform: translateY(17px);
+}
+.about .right .prog p{
+    padding: 3px 0;
+    margin-left: 8px;
+    width: 35px;
+    font-family: 'Lato';
+}

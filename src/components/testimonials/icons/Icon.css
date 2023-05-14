@@ -1,0 +1,73 @@
+@import '../../../global.css';
+
+
+.f-icons {
+    color:var(--lightGreen);
+    position: relative;
+    z-index: 10;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.f-icons a img{
+    width: 56px;
+    height: 56px;
+}
+.f-icons a{
+    color:var(--lightGreen);
+    animation: imag 4s linear infinite;
+
+    @keyframes imag{
+        0%{
+            transform: translateY(-5px);
+        }
+        50%{
+            transform: translateY(5px);
+        }
+        100%{
+            transform: translateY(-5px);
+        }
+    }
+}
+.f-icons a:nth-child(2),
+.f-icons a:nth-child(5){
+    animation: mage 4s linear infinite;
+
+    
+}
+@keyframes mage{
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+.f-icons a:hover{
+    color:var(--lightBlue);
+}
+@media (max-width: 500px) {
+    .f-icons {
+        gap: 1rem;
+        margin-bottom: 172px;
+    }
+    .f-icons a img {
+        width: 32px;
+        height: 34px;
+    }
+}
+@media (max-width: 500px) {
+    .f-icons {
+    margin-bottom: 279px;
+    }
+}
+@media (max-width: 360px) {
+    .f-icons {
+        margin-bottom: 10px;
+    }
+}

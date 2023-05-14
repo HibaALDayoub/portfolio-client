@@ -1,0 +1,100 @@
+@import '../../../global.css';
+.project {
+    background-color: var(--navyBlue);
+}
+.project .swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.project .swiper-wrapper .swiper-slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(672px, 1fr));
+}
+.project .swiper-button-prev,
+.project .swiper-button-next {
+    color: rgba(255, 255, 255, 0.895);
+}
+
+.project h3,
+.project p {
+    /* color: rgb(247, 233, 233); */
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.project .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .box:hover .item {
+    bottom: 0;
+    opacity: 0.9;
+}
+.project .box:hover .rr {
+    opacity: 0.3;
+}
+.project .box .rr {
+    width: 672px;
+    height: 350px;
+    object-fit: cover;
+    transform: translateX(40px);
+    transition: 0.3s;
+}
+.project .box .item {
+    width: 672px;
+    height: 330px;
+    padding: 15px 25px;
+    transform: translateX(20px);
+    border-radius: 20px;
+    border: 1px solid rgb(240, 239, 239);
+    margin: 10px 20px;
+    background-color: var(--lightGreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    left: 0;
+    bottom: -100%;
+    /* bottom: 0; */
+    transition: 0.3s;
+    position: absolute;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+.project .box .item a {
+    text-align: center;
+    padding: 13px;
+    width: 108px;
+    transform: translate(445%,29px);
+    border-radius: 40px;
+    /* background-color: #000000cc; */
+    background-color: var(--navyBlue);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: fangsong;
+}
+
+@media (max-width: 500px) {
+    .project .box .rr {
+        width: 360px;
+        object-fit: contain;
+        transform: translateX(10px);
+    }
+    .project .swiper-button-prev,
+    .project .swiper-button-next {
+        --swiper-navigation-size: 22px
+    }
+    .project .box .item {
+        width: 312px;
+        transform: translateX(12px);
+    }   
+    .project .box .item a {
+        padding: 10px;
+        transform: translate(150px,1px);
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

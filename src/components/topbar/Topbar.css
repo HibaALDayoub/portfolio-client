@@ -1,0 +1,128 @@
+@import "../../global.css";
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: var(--navyBlue);
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+/* ::webkit-scrollbar{
+    display: none;
+} */
+.topbar .wrapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .wrapper .left .logo{
+    font-size: 30px;
+    font-weight: 500;
+}
+.topbar .wrapper .left .logo span{
+    color: var(--lightGreen);
+}
+.topbar .wrapper .right .menu ul{
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease;
+    
+}
+.topbar .wrapper .right .menu ul li{
+    padding-right: 40px;
+}
+.topbar .wrapper .right .menu ul li a{
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.topbar .wrapper .right .menu ul li a:hover{
+    color:var(--lightGreen)
+}
+
+.Bars{
+    display: none;
+    cursor: pointer;
+}
+.topbar .wrapper .right .menu .openMenu{
+    height: 100vh;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(-117deg, var(--lightGreen), var(--navyBlue));
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all 1s ease;
+    z-index: 2;
+}
+.topbar .wrapper .right .menu .openMenu li{
+    margin: 25px;
+}
+.topbar .wrapper .right .menu .openMenu li a{
+    font-size: 25px;
+    font-family: 'Lato';
+}
+.topbar .wrapper .right .menu .openMenu li a:hover{
+    color: aliceblue;
+    font-family: 'Lato';
+    font-weight: 900;
+    background: linear-gradient(90deg,var(--lightGreen),rgb(168, 95, 214));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.topbar .wrapper .right .menu .openMenu li a:focus{
+    transition: all 1s ease;
+
+}
+@media (max-width: 768px) {
+    .topbar .wrapper .right .menu ul{
+        display: none;
+    }
+    .Bars{
+        color: white;
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+    .Bars span{
+        width: 100%;
+        height: 3px;
+        background-color: var(--lightGreen);
+        cursor: pointer;
+        transform-origin: left;
+        transition: all 2s ease;
+    }
+    .open .line1{
+        background-color: white;
+        transform: rotate(45deg);
+    }
+    .open span:nth-child(2){
+        opacity: 0;
+    }
+    .open span:last-child{
+        background-color: white;
+        transform: rotate(-45deg);
+    }    
+}
+
+/* @media (max-width: 768px) {
+
+}
+@media (max-width: 992px) {
+   
+} */
+@media (max-width: 500px) {
+    .topbar{
+        width: 375px;
+    }
+}
